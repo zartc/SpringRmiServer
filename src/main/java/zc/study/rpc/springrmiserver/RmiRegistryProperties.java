@@ -22,9 +22,12 @@ public class RmiRegistryProperties {
 	/**
 	 * The RMI port number
 	 */
-	private int port;
+	private int port = 1299;
 
-	private String greetingServiceName = "zc.studdy.rpc.simplermiserver.greetingService";
+	/**
+	 * The name under which the greeting service is registered in the Rmi Registry.
+	 */
+	private String greetingServiceName = "zc.study.rpc.rmi.greetingService";
 
 
 	public String getHost() {
